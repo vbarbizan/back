@@ -8,17 +8,16 @@ generator client {
 }
 
 model Product {
-  id Int @id @default(autoincrement())
-  name String
+  id          Int    @id @default(autoincrement())
+  name        String
   description String
-  price Float 
-  stock Int
+  price       Float
+  stock       Int
 }
 
-model Customers{
-  id Int @id @default(autoincrement())
-  name String
-  description String
-  price Float 
-  stock Int
+model Customer {
+  id       Int    @id @default(autoincrement())
+  name     String
+  lastName String
+  email    String
 }
